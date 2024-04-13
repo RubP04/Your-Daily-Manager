@@ -125,3 +125,5 @@ function timer()
 {
     window.location.href = "timer.html"
 }
+
+//TESTING 123
