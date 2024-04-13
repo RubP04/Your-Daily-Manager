@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    border: black;
+    outline: black;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: white;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(202, 211, 211) 90%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#page_container{
+    height: 100%;
+    width: 50%;
+    padding: 50px;
+    padding-top: 200px;
+}
+#general_container{
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 0 20px -15px #000;
+    border-radius: 20px;
+}
+#header_container{
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid rgb(223, 222, 222);
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    border-radius: 20px;
+}
+#header{
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 1000;
+    color: black;
+}
+#fillable_info_container{
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    float: left;
+    padding-top: 20px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    border-radius: 20px;
+}
+#user_input_container{
+    height: 100%;
+    width: 60%;
+    float: left;
+    border-radius: 20px;
+}
+#button_container{
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+}
+#button_container button{
+    height: 100%;
+    width: 45%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    border: black;
+    outline: black;
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+    padding: 10px;
+}
+input{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 13px;
+    border-radius: 20px;
+}
+  
