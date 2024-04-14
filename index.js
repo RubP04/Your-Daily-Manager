@@ -120,8 +120,3 @@ function name_validation(name)
 {
     return name.trim().length > 0
 }
-
-function timer()
-{
-    window.location.href = "timer.html"
-}
