@@ -14,12 +14,17 @@ button{
     border-radius: 5px;
     color: white;
 }
+#title{
+    text-align: center;
+    font-family: Roboto;
+    font-weight: bold;
+}
 #calen_header{
     padding: 10px;
     color: #000000;
     font-size: 26px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 550;
     display: flex;
     justify-content: space-between;
 }
