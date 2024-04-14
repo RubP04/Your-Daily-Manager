@@ -15,7 +15,7 @@
         <div id="calen_header">
             <div id="display_month"></div>
             <div>
-                <button onclick="timer()">TIMER</button>
+                <button id="timer" onclick="timer()">TIMER</button>
                 <button id="back">BACK</button>
                 <button id="next">NEXT</button>
             </div>
@@ -31,6 +31,19 @@
         </div>
         <div id="calendar"></div>
     </div>
+    <div id="new_event">
+        <h1>NEW EVENT</h1>
+        <input id="event_title" placeholder="Event Title"/>
+        <button id="cancel">CANCEL</button>
+        <button id="save">SAVE</button>
+    </div>
+    <div id="delete_event">
+        <h1>DELETE EVENT</h1>
+        <p id="event_text"></p>
+        <button id="cancel_delete">CANCEL</button>
+        <button id="confirm_delete">CONFIRM</button>
+    </div>
+    <div id="modal"></div>
 </body>
 <script src="calendar.js"></script>
 </html>

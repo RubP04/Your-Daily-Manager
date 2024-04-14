@@ -3,7 +3,7 @@ body{
     margin-top: 50px;
     justify-content: center;
     background-color: #FFFCFF;
-  }
+}
 button{
     width: 75px;
     cursor: pointer;
@@ -14,7 +14,6 @@ button{
     border-radius: 5px;
     color: white;
 }
-  
 #calen_header{
     padding: 10px;
     color: #000000;
@@ -67,9 +66,8 @@ button{
 .day:hover{
     background-color: #e1e2e2;
 }
-  
-.day + #currentDay{
-    background-color:#e8f4fa;
+.day + #current_day{
+    background-color: #e1e2e2;
 }
 .event{
     font-size: 10px;
@@ -85,21 +83,21 @@ button{
     background-color: #FFFCFF !important;
     box-shadow: none !important;
 }
-#newEventModal, #deleteEventModal{
+#new_event, #delete_event{
+    font-family: Roboto;
     display: none;
-    z-index: 20;
+    z-index: 25;
     padding: 25px;
-    background-color: #e8f4fa;
+    background-color: #ffffff;
     box-shadow: 0px 0px 3px black;
     border-radius: 5px;
     width: 350px;
-    top: 100px;
+    top: 250px;
     left: calc(50% - 175px);
     position: absolute;
-    font-family: sans-serif;
 }
-#eventTitleInput{
-    padding: 10px;
+#event_title{
+    padding: 5px;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 25px;
@@ -108,19 +106,19 @@ button{
     border: none;
     box-shadow: 0px 0px 3px gray;
 }
-#eventTitleInput.error{
-    border: 2px solid red;
+#event_title.error{
+    border: 2px solid rgb(255, 0, 0);
 }
- #cancelButton, #deleteButton{
+#cancel, #cancel_delete{
     background-color: #d36c6c;
 }
-#saveButton, #closeButton{
-    background-color: #92a1d1;
+#save, #confirm_delete{
+    background-color: #3bc552;
 }
-#eventText{
+#event_text{
     font-size: 14px;
 }
-#modalBackDrop{
+#modal{
     display: none;
     top: 0px;
     left: 0px;
