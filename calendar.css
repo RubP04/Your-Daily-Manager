@@ -39,6 +39,10 @@ button{
     width: 770px;
     font-family: Roboto;
 }
+#logout{
+    color: black;
+    background-color: #fff;
+}
 #weekdays{
     width: 100%;
     display: flex;
