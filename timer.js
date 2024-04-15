@@ -9,7 +9,7 @@ var reset_but = document.querySelector('#reset')
 var minutes = 0
 var seconds = 0
 var milliseconds = 0
-var timerInterval
+var timer_interval
 //Event listeners for stopwatch buttons.
 start_but.addEventListener('click', start)
 stop_but.addEventListener('click', stop)
@@ -19,9 +19,10 @@ reset_but.addEventListener('click', reset)
 function start()
 {
     //Ensures that the time associated with the stopwatch is initially zero.
-    clearInterval(timerInterval)
+    clearInterval(timer_interval)
     //Begins the stopwatch timer through interval function.
-    timerInterval = setInterval(function() {
+    timer_interval = setInterval(function() 
+    {
         milliseconds++
         //If time threshhold is passed, appropriate time value is updated accordingly.
         if(milliseconds >= 100)
@@ -39,19 +40,19 @@ function start()
             stop()
         }
         update()
-    }, 10); //Interval set to 10 milliseconds for milliseconds precision
+    }, 10) //Interval set to 10 milliseconds for milliseconds precision
 }
 
 //Stop function that essentially pauses the timer.
 function stop()
 {
-    clearInterval(timerInterval)
+    clearInterval(timer_interval)
 }
 
 //Reset function that clears the timer and resets all the time-associated variables to zero.
 function reset()
 {
-    clearInterval(timerInterval)
+    clearInterval(timer_interval)
     minutes = 0
     seconds = 0
     milliseconds = 0
@@ -61,7 +62,7 @@ function reset()
 //Update function that ensures the timer is diplaying the appropriately formatted time.
 function update()
 {
-    //These ternary operators + vars ensure that the time shows abides to common timing format principles.
+    //These ternary operators + vars ensure that the time shown abides to common timing format principles.
     var padded_mins = (minutes < 10 ? '0' : '') + minutes
     var padded_secs = (seconds < 10 ? '0' : '') + seconds
     var padded_millisecs = (milliseconds < 10 ? '0' : '') + milliseconds
@@ -70,6 +71,7 @@ function update()
     millisecs_element.textContent = padded_millisecs
 }
 
+//Back function that switches the HTML page when the 'back' button is pressed on the application.
 function back()
 {
     window.location.href = "calendar.html"
