@@ -13,7 +13,7 @@ function register()
     }
     else if(password_validation(password) == false)
     {
-        alert("Error! Passowrd must atleast: contain 8 characters, 1 uppercase, 1 symbol!")
+        alert("Error! Password must at least contain: 8 characters, 1 uppercase, 1 symbol!")
         return
     }
     else if(name_validation(full_name) == false)
